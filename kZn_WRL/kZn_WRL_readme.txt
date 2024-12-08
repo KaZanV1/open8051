@@ -1,5 +1,6 @@
 ;=============================
 ;	Wireless_Perif
+kZn_WRL_C1_02_01---test version universal niet pwm
 kZn_WRL_C1_03_00---test_version ---Potencimeter power control and 50Hz PWM out
 
 kZn_WRL_C1_03_01-- control batidora fijo
