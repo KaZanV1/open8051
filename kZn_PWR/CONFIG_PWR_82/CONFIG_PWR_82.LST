@@ -1,0 +1,139 @@
+A51 MACRO ASSEMBLER  CONFIG_PWR_82                                                        12/20/2024 12:15:39 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.01
+OBJECT MODULE PLACED IN CONFIG_PWR_82.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE CONFIG_PWR_82.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;***************************************************************************
+                       2     ;               fisier de configuratie
+                       3     ;***************************************************************************
+3E00                   4     ORG 03E00H
+3E00                   5     POWER_TABLE:
+                       6     ;       PUTERE          NIVEL DETECTIE
+                       7     
+                       8     
+3E00 0280              9     DB      002H,080H       ;START INDUCTIONPOWER_LEVEL     
+3E02 600A             10     DB      060H,00aH       ;RFU
+                      11      
+                      12     
+                      13     
+                      14     
+                      15     
+                      16     
+                      17     
+                      18     ;============================================
+                      19     
+3E04 0A000210         20     DB      00aH,000H,      002H,010H       ;1    pare ok    vreo 7.7 a cu alba
+                      21     
+                      22     
+                      23     
+                      24     
+3E08 028003E0         25     DB      002H,080H,      003H,0E0H       ;2
+3E0C 010001C0         26     DB      001H,000H,      001H,0C0H       ;3
+3E10 020001A0         27     DB      002H,000H,      001H,0A0H       ;4
+3E14 02850180         28     DB      002H,085H,      001H,080H       ;5
+3E18 02500180         29     DB      002H,050H,      001H,080H       ;6
+3E1C 07470180         30     DB      007H,047H,      001H,080H       ;7
+3E20 08680180         31     DB      008H,068H,      001H,080H       ;8
+3E24 0EA00180         32     DB      00EH,0A0H,      001H,080H       ;9
+3E28 0ED00180         33     DB      00EH,0D0h,      001H,080H       ;P=BOOST
+                      34     
+                      35     
+                      36     
+                      37     
+                      38     
+3E2C 00000000         39     DB      000H,000H,      000H,000H       ;
+                      40     ;____________________________________________________________
+                      41     
+                      42     
+                      43     
+3E30                  44     COIL_T_MAX_LEVEL:       ;LEVEL TO STOP FIRE
+3E30 0340             45             DB      003H,040H       ;CIT SA SE INCALZEASCA SI S ADEA ALRMA PT PROBE
+3E32                  46     COIL_T_HIGH_LEVEL:      ;LEVEL TO SHOW ON DISPLAY H
+3E32 0D00             47             DB      00DH,000H
+3E34                  48     COIL_T_MID_LEVEL:       ;LEVEL TO SHOW ON DISPLAY h
+3E34 0D80             49             DB      00DH,080H
+                      50     ;-------------------------------------
+3E36                  51     PCB_T_MAX_LEVEL:        ;LEVEL TO STOP FIRE
+3E36 09F0             52             DB      009H,0f0H               ;VALOR DE 80 GRADOS RADIADOR/PCB
+                      53     ;--------------------------------------
+                      54             ;
+                      55     
+3E38                  56     WIFI_START_LEVEL:       ;NIVELUL LA CARE PORNESTE WIFI
+3E38 0280             57     DB      002H,080H
+3E3A                  58     DAC0_VAL:               ;OVERCURRENT VALUE
+A51 MACRO ASSEMBLER  CONFIG_PWR_82                                                        12/20/2024 12:15:39 PAGE     2
+
+3E3A 0780             59     DB      007h,080H       ;SALTA LA VRO 8A  verificat ciudat
+                      60     
+                      61     
+3E3C                  62     DAC1_VAL:               ;OVERVOLTAGE VALUE
+3E3C 0FF0             63     DB      00fH,0F0H       ;245V  TRIGER
+                      64     
+3E3E                  65     DELAY_IADC:             ;TIMPUL CIT INTIRZIE S AFACA CITIREA DE CURENT DUPA TRECEREA PIN ZE
+                             RO 
+3E3E F780             66     DB      0F7H,080H        ;OK 210-230V   merge d ela 1-4
+                      67     
+3E40                  68     DETECT_POWER_LEVEL:     ;POWER USED ON DETECTION PROCESS
+3E40 700E             69     DB      070H,00EH               ;PWM
+                      70     
+3E42                  71     DETECT_MAXIM_PULSE:     ;CITE PULSURI MAXIM SA AIBE
+3E42 0B               72     DB      00BH    
+3E43                  73     HYSTER_LEVEL:           ;NIVELUL DE HYSTERERZIS PT CONTROLUL CURENTULUI
+3E43 08               74     DB      008H
+3E44                  75     WIFI_LINK_TOT:          ;CITE CICKLURI D E50HZ ASTEAPTA PINA DA LINK FAILED
+3E44 40               76     db      040H    
+3E45                  77     MINIM_PWM_FRQ:          ;FRECVENTZA MINIMA DE PWM PWM_MAX
+3E45 A5               78     DB      0A5H
+                      79     ;OTHER VALUES
+3E46 00               80     DB      000H
+3E47 0000             81     DB      000H,000H
+                      82     
+                      83     
+                      84     
+                      85     
+                      86     ;___________________________________________________________________________
+3E49                  87     ONOFF_CYCLES:   ;
+3E49 0069             88     DB 000H,069H 
+                      89     
+3E4B                  90     LAST_16_LEVELS:
+3E4B 00000000         91     DB 000H,000H,000H,000H,000H,000H,000H,000H
+3E4F 00000000                
+3E53 00000000         92     DB 000H,000H,000H,000H,000H,000H,000H,000H
+3E57 00000000                
+                      93     
+                      94     
+*** WARNING #A41 IN 94 (CONFIG_PWR_82.asm, LINE 94): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  CONFIG_PWR_82                                                        12/20/2024 12:15:39 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+COIL_T_HIGH_LEVEL.  C ADDR   3E32H   A   
+COIL_T_MAX_LEVEL .  C ADDR   3E30H   A   
+COIL_T_MID_LEVEL .  C ADDR   3E34H   A   
+DAC0_VAL . . . . .  C ADDR   3E3AH   A   
+DAC1_VAL . . . . .  C ADDR   3E3CH   A   
+DELAY_IADC . . . .  C ADDR   3E3EH   A   
+DETECT_MAXIM_PULSE  C ADDR   3E42H   A   
+DETECT_POWER_LEVEL  C ADDR   3E40H   A   
+HYSTER_LEVEL . . .  C ADDR   3E43H   A   
+LAST_16_LEVELS . .  C ADDR   3E4BH   A   
+MINIM_PWM_FRQ. . .  C ADDR   3E45H   A   
+ONOFF_CYCLES . . .  C ADDR   3E49H   A   
+PCB_T_MAX_LEVEL. .  C ADDR   3E36H   A   
+POWER_TABLE. . . .  C ADDR   3E00H   A   
+WIFI_LINK_TOT. . .  C ADDR   3E44H   A   
+WIFI_START_LEVEL .  C ADDR   3E38H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)
