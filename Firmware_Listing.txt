@@ -1,3 +1,11 @@
+Firmware format name
+kZn_XYZ_12_34_56--abcd.....
+kZn->operating_system
+XYZ->family name 4x=keyboard,8x=power board,cx=
+12 ->group_name (PCB_version) 
+34 ->firmware_version  00-test version 1x-production version
+abcd ->optional short description
+
 
 ;=============================
 ;	Keyboard
