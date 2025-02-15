@@ -10,11 +10,14 @@ abcd ->optional short description
 ;=============================
 ;	Keyboard
 kZn_KEY_43_02_10--Keyboard for 2 Stoves Mark_2
+kZn_KEY_43_02_12--Keyboard for 2 Stoves Mark_2
 
 
 ;=============================
 ;	Power_PCB
 kZn_PWR_82_01_00--Power_PCB_mark2 test version
+kZn_PWR_83_00_00-Pwer_PCB_mark_3-master
+kZn_PWR_83_00_80-Pwer_PCB_mark_3-slave
 
 
 
