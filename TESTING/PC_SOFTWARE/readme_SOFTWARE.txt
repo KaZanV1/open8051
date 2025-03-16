@@ -1,1 +1,1 @@
-This folder contains MUST be placed in c:/temp/CLOEN_PROGRAM
+This contents of DRIVER file MUST be placed in c:/temp/CLOEN_PROGRAM
