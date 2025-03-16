@@ -1,1 +1,0 @@
-FLASHUtilCL downloadusb config_temp.hex "" 0 1 R
