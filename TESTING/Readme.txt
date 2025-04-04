@@ -1,3 +1,12 @@
+PROTOCOL COMUNICATION kZn_1_01
+   KYB			       PWR				      KYB
+-----------------------------------------------------
+1X.80-START_DET	0X.00-NOT			    0X.00-STOP
+				        0X.01-DETECTING		0X.00-STOP	
+				        0X.08-DETECTED		0X.90-START PWR1
+-----------------------------------------------------
+
+
 Firmware y configuraciones
 
 ======   xx.yy.zz_MST for MASTER mcu U9
