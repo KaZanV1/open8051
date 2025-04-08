@@ -1,0 +1,1 @@
+FLASHUtilCL downloadusb config_C0.hex "" 0 1 R
